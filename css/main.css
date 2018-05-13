@@ -41,8 +41,17 @@ main>section {
   margin: auto;
   margin-top: 2%;
   width: 80%;
-  border-top: 1px solid #4a4a4a;
   display: none;
+  border-top: 1px solid #4a4a4a;
+}
+
+main>section>article {
+  margin-bottom: 0px;
+  padding: 1%;
+}
+main>section>article:hover {
+  border: 1px solid #4a4a4a;
+
 }
 
 footer {
