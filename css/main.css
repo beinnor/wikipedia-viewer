@@ -1,0 +1,49 @@
+html {
+  height: 100%;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  margin-top: 10%;
+  text-align: center;
+}
+
+main {
+  width: 80%;
+}
+
+main>form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+main>form>input {
+  width: 80%;
+}
+
+main>section {
+  border: 1px solid black;
+  margin-top: 2%;
+}
+
+footer {
+  width: 100%;
+  margin-top: auto;
+  text-align: center;
+}
