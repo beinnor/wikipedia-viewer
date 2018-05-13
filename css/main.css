@@ -38,8 +38,11 @@ main>form>input {
 }
 
 main>section {
-  border: 1px solid black;
+  margin: auto;
   margin-top: 2%;
+  width: 80%;
+  border-top: 1px solid #4a4a4a;
+  display: none;
 }
 
 footer {
