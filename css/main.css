@@ -37,20 +37,20 @@ main>form>input {
   width: 80%;
 }
 
-main>section {
+main>div {
   margin: auto;
   margin-top: 2%;
   width: 80%;
   display: none;
-  border-top: 1px solid #4a4a4a;
 }
 
-main>section>article {
-  margin-bottom: 0px;
-  padding: 1%;
-}
-main>section>article:hover {
+main>div>article {
   border: 1px solid #4a4a4a;
+  padding: 1%;
+  margin: 1%;
+}
+main>div>article:hover {
+  border: 2px solid #4a4a4a;
 
 }
 
