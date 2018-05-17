@@ -12,13 +12,9 @@
 
 <body>
 
-
-
   <header>
     <h1>Wikipedia Viewer</h1>
   </header>
-
-
 
   <main>
 
@@ -26,7 +22,8 @@
       <input type="search" id="searchField" placeholder="Search Wikipedia" autocomplete="off" autofocus />
       <div>
         <button type="submit" id="searchBtn">Search</button>
-        <button type="button" id="randomBtn">Random article</button>
+        <!--<button type="button" href="https://en.wikipedia.org/wiki/Special:Random" id="randomBtn">Random article</button>-->
+        <a class="button" href="https://en.wikipedia.org/wiki/Special:Random">Random article</a>
       </div>
     </form>
 
@@ -36,17 +33,13 @@
 
   </main>
 
-
-
   <footer>
     <p>A
-      <a href="https://www.freecodecamp.org/challenges/build-a-wikipedia-viewer">freeCodeCamp</a> project by
-      <a href="http://beinnor.github.io/">Beinnor</a> 2018
+      <a class="link" href="https://www.freecodecamp.org/challenges/build-a-wikipedia-viewer">freeCodeCamp</a> project by
+      <a class="link" href="http://beinnor.github.io/">Beinnor</a> 2018
     </p>
 
   </footer>
-
-
 
   <script src="js/main.js"></script>
 </body>

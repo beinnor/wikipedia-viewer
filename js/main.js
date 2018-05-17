@@ -40,9 +40,9 @@ function queryWikipedia(searchString) {
         let result = JSON.parse(xhr.responseText);
         writeArticles(result);
 
+      } else {
+        outputDiv.innerHTML = "Error: nothing from API";
       }
-    } else {
-      outputDiv.innerHTML = "Error: nothing from API";
     }
   };
 
@@ -64,10 +64,11 @@ function writeArticles(results) {
     tldr[i] = document.createElement("p");
     urls[i] = document.createElement("a");
 
-    titles[i].innerHTML = results[1][i];
-    tldr[i].innerHTML = results[2][i];
+    titles[i].textContent = results[1][i];
+    tldr[i].textContent = results[2][i];
     urls[i].setAttribute("href", results[3][i]);
-    urls[i].innerHTML = "Go to wikipedia";
+    urls[i].setAttribute("class", "link");
+    urls[i].textContent = "Go to wikipedia";
 
     articles[i].appendChild(titles[i]);
     articles[i].appendChild(tldr[i]);
@@ -76,11 +77,11 @@ function writeArticles(results) {
   }
 
 
-  outputDiv.style.display = "block";
+  outputDiv.hidden = false;
 
 }
 
 function clearOutputDiv() {
   outputDiv.innerHTML = "";
-  outputDiv.style.display = "none";
+  outputDiv.hidden = true;
 }

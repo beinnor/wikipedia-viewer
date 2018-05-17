@@ -41,17 +41,22 @@ main>div {
   margin: auto;
   margin-top: 2%;
   width: 80%;
-  display: none;
 }
 
 main>div>article {
-  border: 1px solid #4a4a4a;
-  padding: 1%;
+  border: 1px dotted #4a4a4a;
+  padding: 2%;
   margin: 1%;
+  display: flex;
+  flex-flow: column nowrap;
 }
-main>div>article:hover {
-  border: 2px solid #4a4a4a;
 
+main>div>article:hover {
+  border: 1px solid #4a4a4a;
+}
+
+main>div>article>a {
+  align-self: center;
 }
 
 footer {
