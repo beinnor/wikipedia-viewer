@@ -26,7 +26,6 @@ searchBtn.addEventListener("click", function (e) {
 
 function queryWikipedia(searchString) {
 
-  // TODO: change to fetch maybe
   let xhr = new XMLHttpRequest();
   const endPoint = 'https://en.wikipedia.org/w/api.php';
   let url = `${endPoint}?action=opensearch&search="${searchString}"&format=json&origin=*`;
@@ -50,6 +49,8 @@ function queryWikipedia(searchString) {
 }
 
 function writeArticles(results) {
+
+  clearOutputDiv();
 
   let numArticles = results[1].length;
   let titles = []; // results[1];
